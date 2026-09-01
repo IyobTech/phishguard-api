@@ -1,0 +1,35 @@
+{
+  "model_version": "phishguard-2026.09.01",
+  "positive_class": "Potential phishing",
+  "negative_class": "Likely legitimate",
+  "decision_threshold": -0.23989811767858416,
+  "best_C": 0.5,
+  "feature_design": {
+    "char_ngrams": {
+      "analyzer": "char",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "n_features": 262144,
+      "alternate_sign": false
+    },
+    "engineered_feature_count": 49
+  },
+  "training_data": {
+    "primary": "UCI PhiUSIIL Phishing URL Dataset (ID 967)",
+    "uploaded_phishtank_used_for_training": false,
+    "uploaded_phishtank_role": "external phishing generalization check"
+  },
+  "test_metrics": {
+    "dataset": "UCI grouped test",
+    "accuracy": 0.9977216631858743,
+    "precision": 0.9993597636050234,
+    "recall": 0.9953401677539608,
+    "f1": 0.9973459156590976,
+    "roc_auc": 0.998993663825004,
+    "pr_auc": 0.9992272519635812
+  },
+  "phishing_external_recall": 0.9961403558197518,
+  "created_at_utc": "2026-09-01T07:45:54.054050+00:00"
+}
